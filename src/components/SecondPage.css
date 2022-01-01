@@ -2,48 +2,57 @@
 {
     width: 100%;
     height: 100vh;
-    background-color: black;
+    background-color: #222222;
 }
 
 .sp-main
 {
-    margin: 0rem 5rem 0rem 5rem;
-    padding-top: 5rem;
     display: flex;
+    margin-left: 7rem;
 }
 
 .about-me h1{
     font-family: 'Bebas Neue', cursive;
-    font-size: 400%;
+    font-size: 900%;
     color: white;
-}
-
-.about-me h2{
-    font-family: 'Bebas Neue', cursive;
-    font-size: 170%;
-    color: white;
-}
-
-.about-me p
-{
-    font-size: 20px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight:400;
-    text-align: justify;
-    margin-top: 2rem;
-    margin-bottom: 3rem;
-    color: white;
+    writing-mode: vertical-lr;
+    text-orientation: sideways;
+    letter-spacing: 2rem;
+    width: 500%;
 }
 
 .about-me
 {
-    width: 50%;
-    margin: 0rem 3rem 0rem 3rem;
-    animation: fadeIn 2s; 
-    -webkit-animation: fadeIn 2s;
-    -moz-animation: fadeIn 2s;
-    -o-animation: fadeIn 2s;
-    -ms-animation: fadeIn 2s;
+    display: flex;
+    
+}
+
+.about-me-header
+{
+    justify-content: flex-end;
+}
+
+.second-page-information
+{
+    width: 45%;
+    text-align: justify;
+}
+
+.second-page-information p
+{
+    font-size: 1.3rem;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+.second-page-information h2 
+{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 220%;
+    color: white;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .technologies-wrapper
@@ -59,6 +68,7 @@
     grid-template-columns: repeat(3, 1fr);
     font-family: 'Montserrat', sans-serif;
     width: 100%;
+    text-align: center;
 }
 
 .technologies h3{
