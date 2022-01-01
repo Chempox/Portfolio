@@ -1,0 +1,94 @@
+
+
+.hamburger-menu
+{
+    overflow-x: hidden;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    background-color: white;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    right: -100%;
+    transition:ease-in-out 0.3s;
+}
+
+.hamburger-menu.active
+{
+    align-items: center;
+    right: 0%;
+    transition:ease-in-out 0.3s;
+}
+.hamburger-menu ul
+{
+    width: 100%;
+}
+.hamburger-menu li
+{
+    color: black;
+    font-family: 'Bebas Neue', cursive;
+    padding: 2rem 2rem 2rem 2rem;
+    font-size: 20px;
+    list-style-type: none;
+    cursor: pointer;
+}
+.hamburger-menu li:hover
+{
+    background-color: cornflowerblue;
+}
+
+.arrow-left
+{
+    transform: rotate(180deg);
+    cursor: pointer;
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    top: 0;
+    min-width: 40px;
+    min-height: 40px;   
+    color: white;
+    background-color: black;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    border-radius: 30px;
+    animation: rotate-left 1s forwards;
+}
+
+.arrow-right
+{
+    cursor: pointer;
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    top: 0;
+    min-width: 40px;
+    min-height: 40px;   
+    color: white;
+    background-color: black;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    border-radius: 30px;
+    animation: rotate-right 1s forwards;
+}
+
+
+@keyframes rotate-right
+{
+    100%
+    {
+        transform: rotate(180deg);
+    }
+}
+@keyframes rotate-left
+{
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+
+

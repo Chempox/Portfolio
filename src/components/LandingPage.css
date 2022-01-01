@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Luckiest+Guy&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,300;1,400&display=swap');
+
+
+.lp-container{
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.lp-main
+{
+    
+    margin: 0rem 0rem 0rem 5rem;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+}
+
+.lp-main h1
+{
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    font-size:8.12rem;
+}
+
+
+
+.lp-main span{
+    color: red;
+}
+
+@keyframes animations
+{
+    100%
+    {
+        transform: translateX(100px);
+    }
+}
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+
+@media (max-width: 1220px){
+    .lp-main h1
+    {
+        font-size: 7rem;
+    }
+    
+}
+
+@media (max-width: 1070px){
+    .lp-main h1
+    {
+        font-size: 6rem;
+    }
+    
+}
+
+@media (max-width: 910px){
+    .lp-main h1
+    {
+        font-size: 4rem;
+    }
+
+    .lp-main
+    {
+        margin: 0rem 0rem 0rem 4rem;
+    }
+    
+}
+
+@media (max-width: 635px){
+    .lp-main h1
+    {
+        font-size: 3.7rem;
+    }
+
+    .lp-main
+    {
+        margin: 0rem 0rem 0rem 1.5rem;
+    }
+    
+}

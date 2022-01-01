@@ -1,0 +1,73 @@
+.sp-container
+{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+
+.sp-main
+{
+    margin: 0rem 5rem 0rem 5rem;
+    padding-top: 5rem;
+    display: flex;
+}
+
+.about-me h1{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 400%;
+    color: white;
+}
+
+.about-me h2{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 170%;
+    color: white;
+}
+
+.about-me p
+{
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:400;
+    text-align: justify;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    color: white;
+}
+
+.about-me
+{
+    width: 50%;
+    margin: 0rem 3rem 0rem 3rem;
+    animation: fadeIn 2s; 
+    -webkit-animation: fadeIn 2s;
+    -moz-animation: fadeIn 2s;
+    -o-animation: fadeIn 2s;
+    -ms-animation: fadeIn 2s;
+}
+
+.technologies-wrapper
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.technologies
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+}
+
+.technologies h3{
+    padding: 1rem 1rem 1rem 1rem;
+    color: white;
+}
+
+.sp-main img{
+    width: 50%;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
