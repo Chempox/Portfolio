@@ -10,7 +10,7 @@ function LandingPage() {
               <h1>I'M <span>JUAN</span>,</h1>
               <h1>AND I MAKE INTERNET STUFF.</h1>
           </div>
-          {/* <Sidebar/> */}
+          <Sidebar/>
       </div>
     );
   }

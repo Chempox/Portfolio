@@ -7,13 +7,20 @@ function ThirdPage() {
         <div className="tp-main">
             <div className='third-page-information'>
                 <h1>My Work</h1>
-                <p>A small selection of outstanding projects that I have worked on.</p>
+                <p>A small selection of projects that I have worked on.</p>
             </div>
             <br />
-                <ProjectCardLeft className='tp-content-left'/>
-                <ProjectCardRight className='tp-content-right'/>
-                <ProjectCardLeft className='tp-content-left'/>
-                <ProjectCardRight className='tp-content-right'/>
+            <div className='tp-cards'>
+                <div className='tp-content-left'>
+                    <ProjectCardLeft/>
+                </div>
+                <div className='tp-content-right'>
+                    <ProjectCardRight/>
+                </div>
+                <div className='tp-content-left'>
+                    <ProjectCardLeft/>
+                </div>
+            </div>
         </div>
     );
 }

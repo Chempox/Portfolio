@@ -1,6 +1,5 @@
 .tp-main
 {
-    width: 100vw;
     height: 100%;
     background-color: #222222;
 }
@@ -30,10 +29,21 @@
 {
     width: 100%;
     display: flex;
+    margin-left: 5rem;
 }
 
 .tp-content-right
 {
     display: flex;
-    margin-right: 1000px;
+    justify-content: right;
+    margin-right: 5rem;
+}
+
+.tp-cards
+{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    gap: 1rem;
 }
