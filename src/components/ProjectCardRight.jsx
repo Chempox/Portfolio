@@ -1,0 +1,22 @@
+import './ProjectCardRight.css'
+import { BsGithub } from 'react-icons/bs';
+import { IoMdOpen } from 'react-icons/io';
+
+function ProjectCardRight () 
+{
+    return (
+        <div className='pcr-main'>
+            <div className='pcr-information-container'>
+                    <h1>Project Name</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi iusto consequuntur corporis officia est, saepe at porro quidem totam voluptatibus vel aut praesentium laudantium quibusdam nam ad architecto dolore commodi.</p>
+                    <div className='pcr-buttons'>
+                        <BsGithub className='pcr-button-1'/>
+                        <IoMdOpen className='pcr-button-2'/>
+                    </div>
+            </div>
+            <img src="https://images3.alphacoders.com/823/thumb-1920-82317.jpg" alt="project" />
+        </div>
+    );
+}
+
+export default ProjectCardRight;
