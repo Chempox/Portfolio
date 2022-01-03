@@ -11,10 +11,12 @@
 
 .third-page-information h1 
 {
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'Montserrat', cursive;
     font-size: 10rem;
     text-align: center;
-    letter-spacing: 1rem;
+    letter-spacing: 2rem;
+    -webkit-text-stroke:1px rgb(255, 255, 255);
+    -webkit-text-fill-color:transparent;
 }
 
 .third-page-information p 
