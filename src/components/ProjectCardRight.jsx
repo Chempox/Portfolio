@@ -14,7 +14,7 @@ function ProjectCardRight ()
                         <IoMdOpen className='pcr-button-2'/>
                     </div>
             </div>
-            <img src="https://images3.alphacoders.com/823/thumb-1920-82317.jpg" alt="project" />
+            <img src="https://wallpapercave.com/wp/wp3544754.jpg" alt="project" />
         </div>
     );
 }
