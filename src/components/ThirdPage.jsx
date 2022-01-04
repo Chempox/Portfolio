@@ -9,9 +9,7 @@ import {useAnimation} from 'framer-motion';
 function ThirdPage() {
 
     const {ref, inView} = useInView();
-    const {refTwo, inViews} = useInView();
     const animation = useAnimation();
-    const animationTwo = useAnimation();
     
     useEffect(() =>{
         if(inView)
@@ -26,57 +24,27 @@ function ThirdPage() {
 
         if(!inView)
         {
-            animation.start({x: '-100vw'})
+            animation.start({x: '100%'})
         }
-    },[inView])
-
-
-    useEffect(() =>{
-        if(inViews)
-        {
-            animationTwo.start({
-                x: 0,
-                transition: {
-                    duration: 1
-                }
-            })
-        }
-
-        if(!inViews)
-        {
-            animationTwo.start({x: '-100vw'})
-        }
-    },[inViews])
-
+    })
+    
     return(
         <div className="tp-main">
-            <motion.div className='third-page-information'
-            initial={{x: '100%'}}
-            animate={{x: 0}}
-            transition={{duration: 1}}
-            >
+            <motion.div animate={animation} ref={ref} className='third-page-information'>
                 <h1>MY WORK</h1>
                 <p>A small selection of projects that I have worked on.</p>
             </motion.div>
             <br />
             <div className='tp-cards'>
-                <motion.div ref={ref} className='tp-content-left'
-                animate={animation}
-                >
+                <div  className='tp-content-left'>
                     <ProjectCardLeft/>
-                </motion.div>
-                <motion.div className='tp-content-right'
-                initial={{x: '100%'}}
-                animate={{x: 0}}
-                transition={{duration: 1}}
-                >
+                </div>
+                <div className='tp-content-right'>
                     <ProjectCardRight/>
-                </motion.div>
-                <motion.div ref={refTwo} className='tp-content-left'
-                animate={animationTwo}
-                >
+                </div>
+                <div className='tp-content-left'>
                     <ProjectCardLeft/>
-                </motion.div>
+                </div>
             </div>
         </div>
     );

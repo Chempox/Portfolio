@@ -1,8 +1,11 @@
-
+.pcr-wrapper
+{
+    width: 70%;
+    height: 50vh;
+}
 .pcr-main
 {
     display: flex;
-    width: 70%;
     height: 50vh;
 }
 
