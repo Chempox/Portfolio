@@ -15,6 +15,8 @@ function FourthPageCard ()
                     <a href="https://github.com/Chempox"><BsGithub className='cf-icon'/></a>
                     <p>|</p>
                     <a href="https://www.linkedin.com/in/juan-pablo-y%C3%A1%C3%B1ez-gonz%C3%A1lez-1404b720a/"><BsLinkedin className='cf-icon'/></a>
+                
+                
                 </div>
             </div>
     );
