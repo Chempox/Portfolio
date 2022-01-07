@@ -1,15 +1,21 @@
 import './ProjectCardLeft.css'
 import { BsGithub } from 'react-icons/bs';
 import { IoMdOpen } from 'react-icons/io';
-import {useInView} from 'react-intersection-observer';
-import {useEffect} from 'react';
-import {useAnimation} from 'framer-motion';
 import { motion } from "framer-motion";
 
-function ProjectCardLeft() {
+function ProjectCardLeft({ children }) {
     return(
         <div>
-            <motion.div className='pc-main'>
+            <motion.div className='pc-main'
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true}}
+            transition={{ duration: 1.5}}
+            variants={{
+                visible: { x: 0},
+                hidden: { x:'-100%'}
+            }}
+            >
                 <img src="https://wallpapercave.com/wp/wp3544754.jpg" alt="project" />
                 <div className='information-container'>
                         <h1>Project Name</h1>
@@ -19,6 +25,7 @@ function ProjectCardLeft() {
                             <IoMdOpen className='pc-button-2'/>
                         </div>
                 </div>
+                {children}
             </motion.div>
         </div>
     );

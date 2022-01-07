@@ -3,10 +3,18 @@ import { BsGithub } from 'react-icons/bs';
 import {BsLinkedin} from 'react-icons/bs'
 import { motion } from "framer-motion";
 
-function FourthPageCard () 
+function FourthPageCard ({children}) 
 {
     return(
-        <motion.div className='fp-wrapper'>
+        <motion.div className='fp-wrapper'
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true}}
+            transition={{ duration: 1.5}}
+            variants={{
+                visible: { y: 0},
+                hidden: { y:'-100%'}
+            }}>
             <div className='fp-card'>
                 <div className='fp-card-information'>
                     <h1>Get in Touch</h1>
@@ -22,6 +30,7 @@ function FourthPageCard ()
                 
                 </div>
             </div>
+            {children}
         </motion.div>
     );
 }
