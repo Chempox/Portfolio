@@ -7,30 +7,9 @@ import {useAnimation} from 'framer-motion';
 import { motion } from "framer-motion";
 
 function ProjectCardLeft() {
-    
-    const {ref, inView} = useInView();
-    const animation = useAnimation();
-    
-    useEffect(() =>{
-        if(inView)
-        {
-            animation.start({
-                x: 0,
-                transition: {
-                    duration: 1
-                }
-            })
-        }
-
-        if(!inView)
-        {
-            animation.start({x: '-100%'})
-        }
-    })
-
     return(
         <div>
-            <motion.div animate={animation} ref={ref} className='pc-main'>
+            <motion.div className='pc-main'>
                 <img src="https://wallpapercave.com/wp/wp3544754.jpg" alt="project" />
                 <div className='information-container'>
                         <h1>Project Name</h1>

@@ -1,10 +1,13 @@
 import './FourthPageCard.css'
 import { BsGithub } from 'react-icons/bs';
 import {BsLinkedin} from 'react-icons/bs'
+import { motion } from "framer-motion";
+
 function FourthPageCard () 
 {
     return(
-        <div className='fp-card'>
+        <motion.div className='fp-wrapper'>
+            <div className='fp-card'>
                 <div className='fp-card-information'>
                     <h1>Get in Touch</h1>
                     <p>I'm always looking for new projects and opportunities.</p>
@@ -19,6 +22,7 @@ function FourthPageCard ()
                 
                 </div>
             </div>
+        </motion.div>
     );
 }
 
