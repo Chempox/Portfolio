@@ -1,9 +1,11 @@
 import './SecondPage.css'
+import SeconPageHeader from './SecondPageHeader';
 import { motion } from "framer-motion"
 
 function SecondPage() {
     return (
     <div className='sp-container'>
+        <SeconPageHeader/>
             <div className='about-me'>
                 <div className='second-page-information'>
                     <img src='https://media-exp1.licdn.com/dms/image/C5603AQG2BXKFFrWsdw/profile-displayphoto-shrink_800_800/0/1625810093742?e=1645660800&v=beta&t=ZSLVuo58lTzUqcdTc-_ELuk408q8IZs9dRBcqm-0kVE' alt="asdasdasd"/>
@@ -17,12 +19,6 @@ function SecondPage() {
                         <h3>⮞ Kotlin</h3>
                         <h3>⮞ C++</h3>
                     </div>
-                </div>
-                <div className='about-me-header-1'>
-                <h1>About Me</h1>
-                </div>
-                <div className='about-me-header-2'>
-                    <h1>About Me</h1>
                 </div>
             </div>
     </div>

@@ -15,47 +15,6 @@
     height: 100vh;
 }
 
-.about-me-header-1
-{
-    position: absolute;   
-    left: 0;
-}
-
-.about-me-header-1 span
-{
-    color: red;
-}
-
-.about-me-header-1 h1 
-{
-    font-family: 'Bebas Neue', cursive;
-    font-size: 900%;
-    color: white;
-    writing-mode: vertical-lr;
-    letter-spacing: 1rem;
-}
-
-.about-me-header-2
-{
-    position: absolute;   
-    right: 0;
-}
-
-.about-me-header-2 span 
-{
-    color: red;
-}
-
-.about-me-header-2 h1
-{
-    font-family: 'Bebas Neue', cursive;
-    font-size: 900%;
-    color: white;
-    writing-mode:vertical-lr;
-    letter-spacing: 1rem;
-    transform: rotate(180deg);
-}
-
 .second-page-information
 {
     background-color: rgb(224, 224, 224);
