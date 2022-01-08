@@ -4,7 +4,7 @@
 .lp-container{
     background-color: #222222;
     width: 100vw;
-    height: 100vh;
+    height: 101vh;
     display: flex;
     align-items: center;
 }
@@ -22,6 +22,7 @@
 
 .lp-main h1
 {
+    mix-blend-mode: exclusion;
     color: white;
     font-family: 'Bebas Neue', cursive;
     font-size:8.12rem;

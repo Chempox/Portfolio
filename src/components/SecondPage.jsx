@@ -1,11 +1,12 @@
 import './SecondPage.css'
-import SeconPageHeader from './SecondPageHeader';
+import SeconPageHeaderOne from './SecondPageHeaderOne';
+import SeconPageHeaderTwo from './SecondPageHeaderTwo';
 import { motion } from "framer-motion"
 
 function SecondPage() {
     return (
     <div className='sp-container'>
-        <SeconPageHeader/>
+        <SeconPageHeaderOne/>
             <div className='about-me'>
                 <div className='second-page-information'>
                     <img src='https://media-exp1.licdn.com/dms/image/C5603AQG2BXKFFrWsdw/profile-displayphoto-shrink_800_800/0/1625810093742?e=1645660800&v=beta&t=ZSLVuo58lTzUqcdTc-_ELuk408q8IZs9dRBcqm-0kVE' alt="asdasdasd"/>
@@ -21,6 +22,7 @@ function SecondPage() {
                     </div>
                 </div>
             </div>
+        <SeconPageHeaderTwo/>
     </div>
     );
 }

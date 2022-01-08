@@ -1,0 +1,17 @@
+.sph2-main
+{
+    display: flex;
+    writing-mode: vertical-rl;
+    text-orientation:sideways;
+    align-items: center;
+    justify-content: center;
+    margin-right: 3rem;
+    
+}
+
+.sph2-main h1 
+{
+    color: white;
+    font-size: 900%;
+    font-family: 'Bebas Neue';
+}
