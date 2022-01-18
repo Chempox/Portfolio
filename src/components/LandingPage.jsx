@@ -6,7 +6,7 @@ function LandingPage() {
     return (
       <div className="lp-container">
           <div className="lp-main">
-              <h1>HELLO,</h1>
+              <h1>HELLO 23,</h1>
               <h1>I'M <span>JUAN</span>,</h1>
               <h1>AND I MAKE INTERNET STUFF.</h1>
           </div>
